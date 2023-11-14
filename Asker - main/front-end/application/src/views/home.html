@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../utils/css/default.css">
+    <link rel="stylesheet" href="../utils/css/flexbox.min.css">
+    <link rel="stylesheet" href="../utils/css/text.min.css">
+    <link rel="stylesheet" href="../components/home.css">
+    <link rel="stylesheet" href="../utils/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+    <main class="display-column align-center">
+
+        <header>
+            <div class="first-row display-row align-center justify-space-around">
+                <div class="logo">
+                    <p class="text-logo">Asker</p>
+                </div>
+                <button><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="second-row">
+                <nav>
+                    <ul class="display-row align-center justify-space-around">
+                        <li><a href="#" id="route-home">Home</a></li>
+                        <li><a href="#" id="route-about">About</a></li>
+                        <li><a href="#" id="route-ranking">Ranking</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <aside class="aside-first display-column align-center justify-space-between" id="aside-first">
+            <p class="info-player">Select the category bellow</p>
+            <div class="categoryes display-column align-center justify-space-between">
+                <div class="category">
+                    <button class="display-row align-center justify-space-between" onclick="InitGame('Mathematics')" id="Mathematics">
+                        <img src="../img/features-1.png" alt="">
+                        <p>Mathemathics</p>
+                    </button>
+                </div>
+
+                <div class="category">
+                    <button class="display-row align-center justify-space-between" onclick="InitGame('Logic')" id="Logic">
+                        <img src="../img/features-1.png" alt="">
+                        <p>Logic</p>
+                    </button>
+                </div>
+
+                <div class="category">
+                    <button class="display-row align-center justify-space-between" onclick="InitGame('History')" id="History">
+                        <img src="../img/features-1.png" alt="">
+                        <p>History</p>
+                    </button>
+                </div>
+
+                <div class="category">
+                    <button class="display-row align-center justify-space-between" onclick="InitGame('Culture')" id="Culture">
+                        <img src="../img/features-1.png" alt="">
+                        <p>Culture</p>
+                    </button>
+                </div>
+
+                <div class="category">
+                    <button class="display-row align-center justify-space-between" onclick="InitGame('Countrys')" id="Countrys">
+                        <img src="../img/features-1.png" alt="">
+                        <p>Countrys</p>
+                    </button>
+                </div>
+
+                <div class="category">
+                    <button class="display-row align-center justify-space-between" onclick="InitGame('Geography')" id="Geography">
+                        <img src="../img/features-1.png" alt="">
+                        <p>Geography</p>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <aside id="aside-second" class="aside-second display-column align-center justify-center">
+            <div class="display-column align-center justify-space-around">
+                <p>Insert your datas!</p>
+                <input type="text" placeholder="your player name" id="field-name">
+                <input type="number" placeholder="age" id="field-age">
+                <button id="btn-submit-user">Submit</button>
+            </div>
+        </aside>
+
+        <aside class="aside-third display-column align-center justify-center" id="aside-third">
+            <figure class="display-column align-center justify-space-between">
+                <p class="info-header">The bests players stay here!</p>
+                <img src="../img/banners/banner-ranking.png">
+            </figure>
+            
+            <div class="table-players text-center">
+                <div class="player-header display-row align-center justify-space-around">
+                    <p>Name player</p>
+                    <p>score player</p>
+                </div>
+
+                <div class="player display-row align-center justify-space-around">
+                    <p>Ana213</p>
+                    <p>12938</p>
+                </div>
+
+                <div class="player display-row align-center justify-space-around">
+                    <p id="label-name-player"></p>
+                    <p id="label-score-player"></p>
+                </div>
+
+                <div class="player display-row align-center justify-space-around">
+                    <p id="label-name-player"></p>
+                    <p id="label-score-player"></p>
+                </div>
+
+                <div class="player display-row align-center justify-space-around">
+                    <p id="label-name-player"></p>
+                    <p id="label-score-player"></p>
+                </div>
+
+                <div class="player display-row align-center justify-space-around">
+                    <p id="label-name-player"></p>
+                    <p id="label-score-player"></p>
+                </div>
+
+                <div class="player display-row align-center justify-space-around">
+                    <p id="label-name-player"></p>
+                    <p id="label-score-player"></p>
+                </div>
+
+                <div class="player display-row align-center justify-space-around">
+                    <p id="label-name-player"></p>
+                    <p id="label-score-player"></p>
+                </div>
+
+                <div class="player display-row align-center justify-space-around">
+                    <p id="label-name-player"></p>
+                    <p id="label-score-player"></p>
+                </div>
+
+                <div class="player display-row align-center justify-space-around">
+                    <p id="label-name-player"></p>
+                    <p id="label-score-player"></p>
+                </div>
+
+                <div class="player display-row align-center justify-space-around">
+                    <p id="label-name-player"></p>
+                    <p id="label-score-player"></p>
+                </div>
+
+                <div class="player display-row align-center justify-space-around">
+                    <p id="label-name-player"></p>
+                    <p id="label-score-player"></p>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="aside-fourth display-column align-center justify-space-around" id="aside-fourth">
+            <div class="content-about-logo display-column align-center justify-space-between">
+                <img src="../img/banners/banner-about.png" alt="">
+            </div>
+            <div class="content-about-text display-column align-center justify-space-evenly text-center">
+                <p>About <span>Asker devs</span></p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum tempora similique veniam. Velit ducimus aut temporibus dignissimos sed explicabo quibusdam, est maxime doloremque fuga esse placeat ratione eligendi, molestiae laudantium!</p>
+            </div>
+            <div class="content-about-others display-column align-center justify-space-evenly">
+                <p>Share us in medias</p>
+                <div class="banners display-row align-center justify-space-around">
+                    <i class="fas fa-share-alt"></i>
+                    <i class="fas fa-user"></i>
+                    <i class="fas fa-angry"></i>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="../scripts/home/vars.js"></script>
+    <script src="../scripts/connectPages.js"></script>
+    <script src="../scripts/home/funcs.js"></script>
+    <script src="../scripts/home/requisicions.js"></script>
+    <script src="../scripts/styles.js"></script>
+    <script src="../scripts/home/animates.js"></script>
+    <script src="../scripts/home/ButtonsEvents.js"></script>
+    <script src="../scripts/home/init.js"></script>
+</body>
+</html>

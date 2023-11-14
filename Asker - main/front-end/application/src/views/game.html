@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asker</title>
+    <link rel="stylesheet" href="../utils/css/default.css">
+    <link rel="stylesheet" href="../utils/css/flexbox.min.css">
+    <link rel="stylesheet" href="../utils/css/text.min.css">
+    <link rel="stylesheet" href="../components/game.css">
+    <link rel="stylesheet" href="../utils/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="../components/animategame.css">
+</head>
+<body>
+    <main id="main">
+        <header class="display-row align-center justify-space-around">
+            <p class="content-header-level">
+                <span>Level</span>
+                <span id="label-level"></span>
+            </p>
+            <p class="content-header-category display-column align-center justify-space-around">
+                <span id="category-name"></span>
+            </p>
+            <p class="content-header-round">
+                <span>Round</span>                
+                <span id="label-round"></span>
+            </p>
+        </header>
+        <aside class="display-column align-center justify-space-between" id="side-ask-and-answer">
+            <p class="content-aside-statement" id="label-ask">Loading...</p>
+            <div class="content-aside-answers display-column align-center justify-space-around" >
+                <button class="display-row align-center" onclick="submitAnswer('a')" data-buttons>
+                    <p class="display-row align-center justify-center" id="letter-option" data-letter>A</p>
+                    <p class="display-row align-center" id="label-answer-a">Loading...</p>
+                </button>
+                <button class="display-row align-center" onclick="submitAnswer('b')" data-buttons>
+                    <p class="display-row align-center justify-center" id="letter-option" data-letter>B</p>
+                    <p class="display-row align-center" id="label-answer-b">Loading...</p>
+                </button>
+                <button class="display-row align-center" onclick="submitAnswer('c')" data-buttons>
+                    <p class="display-row align-center justify-center" id="letter-option" data-letter>C</p>
+                    <p class="display-row align-center" id="label-answer-c">Loading...</p>
+                </button>
+                <button class="display-row align-center" onclick="submitAnswer('d')" data-buttons>
+                    <p class="display-row align-center justify-center" id="letter-option" data-letter>D</p>
+                    <p class="display-row align-center" id="label-answer-d">Loading...</p>
+                </button>
+            </div>
+        </aside>
+        <footer class="footer-help display-row align-center justify-space-around">
+            <button class="display-column align-center justify-space-space-around" id="btn-help-eliminate-wrong">
+                <i class="fas fa">-2</i>
+                <p>2 wro</p>
+            </button>
+
+            <button class="display-column align-center justify-space-space-around" id="btn-help-sugest-friend">
+                <i class="fas fa-user-friends"></i>
+                <p>Peop</p>
+            </button>
+
+            <button class="display-column align-center justify-space-space-around" id="btn-help-jump-round">
+                <i class="fas fa-share"></i>
+                <p>Next</p>
+            </button>
+        </footer>
+
+        <aside class="winner-round display-column justify-center align-center" id="page-winner-round">
+            <div class="container display-column align-center justify-space-evenly">
+                <p>Next round! <i class="fas fa-check"></i></p>
+                <figure>
+                    <img src="../img/emoji-happy-winn.gif" alt="">
+                </figure>
+            </div>
+        </aside>
+        <aside class="winner-level display-column justify-center align-center" id="page-winner-level">
+            <div class="container display-column align-center justify-space-around">
+                <div class="message display-column align-center">
+                    <p class="text-center">Now go to  the next level</p>
+                </div>
+                <figure>
+                    <img src="../img/emoji-trofeu-win.gif" alt="">
+                </figure>
+            </div>
+        </aside>
+
+        <aside class="winner-level-all display-column justify-center align-center" id="page-winner-levels">
+            <div class="container display-column align-center justify-space-around">
+                <div class="message display-column align-center">
+                    <p>Congratulations!</p>
+                    <p>You finished all levels</p>
+                </div>
+                <figure>
+                    <img src="../img/emoji-trofeu-win(2).gif" alt="">
+                </figure>
+                <p>Play ohers categorys</p>
+            </div>
+        </aside>
+
+        <aside class="looser display-column justify-center align-center" id="page-looser">
+            <div class="container display-column align-center justify-space-evenly">
+                <p>You loose <span>X</span></p>
+                <figure>
+                    <img src="../img/emoji-sad-loose.gif" alt="">
+                </figure>
+                <p>Try again later!</p>
+            </div>
+        </aside>
+
+    </main>
+
+
+    <script src="../scripts/game/vars.js"></script>
+    <script src="../scripts/connectPages.js"></script>
+    <script src="../scripts/game/config.js"></script>
+    <script src="../scripts/game/requisicions.js"></script>
+    <script src="../scripts/styles.js"></script>
+    <script src="../scripts/game/funcs.js"></script>
+    <script src="../scripts/game/events.js"></script>
+</body>
+</html>

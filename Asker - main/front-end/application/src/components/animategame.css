@@ -1,0 +1,24 @@
+.answer-correct {
+  background: lime;
+}
+
+.answer-correct p {
+  color: white;
+}
+
+.answer-wrong {
+  background-color: red;
+}
+
+.answer-wrong p {
+  background-color: transparent;
+  color: white;
+}
+
+.eliminated {
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*# sourceMappingURL=animategame.css.map */

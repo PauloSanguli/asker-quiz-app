@@ -1,0 +1,318 @@
+main {
+  width: 100%;
+  height: 100vh;
+  /*The mask container form datas user*/
+}
+
+main header {
+  width: 100%;
+  height: 20%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: var(--primary-color);
+}
+
+main header .first-row {
+  width: 100%;
+  height: 60%;
+}
+
+main header .first-row .text-logo {
+  color: var(--tertiary-color);
+  font-family: Pacifico;
+  font-size: 160%;
+}
+
+main header .first-row button {
+  cursor: pointer;
+  font-size: 170%;
+  width: 13%;
+  height: 60%;
+  border: 1px solid transparent;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+main header .second-row {
+  width: 100%;
+  height: 40%;
+}
+
+main header .second-row nav {
+  width: 100%;
+  height: 100%;
+}
+
+main header .second-row nav ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+main header .second-row nav ul li a {
+  font-size: 96%;
+  color: var(--tertiary-color);
+  text-decoration: none;
+  padding: 6px 24px;
+  border-bottom: 5px solid transparent;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+main header .second-row nav ul li a:focus {
+  border-bottom: 5px solid var(--tertiary-color);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+main aside.aside-first {
+  width: 100%;
+  height: 80%;
+  background-color: var(--tertiary-color);
+}
+
+main aside.aside-first .categoryes {
+  width: 100%;
+  height: 85%;
+  overflow: auto;
+}
+
+main aside.aside-first .categoryes .category {
+  width: 90%;
+  height: 180px;
+}
+
+main aside.aside-first .categoryes .category button {
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-color);
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+main aside.aside-first .categoryes .category button img {
+  background-color: var(--tertiary-color);
+  padding: 14px 20px;
+  border-radius: 100px;
+  height: 60px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+main aside.aside-first .categoryes .category button p {
+  color: var(--tertiary-color);
+  font-size: 130%;
+}
+
+main aside.aside-first .categoryes .category button:hover {
+  background: var(--primary-color);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main aside.aside-first .categoryes .category button:hover img {
+  padding: 8px 14px;
+  color: var(--fourtiary-color);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+main aside.aside-first .info-player {
+  -webkit-transform: translateY(80%);
+          transform: translateY(80%);
+}
+
+main aside.aside-second {
+  z-index: 10;
+  position: absolute;
+  top: 0%;
+  width: 0%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+main aside.aside-second div {
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 3px var(--tertiary-color);
+          box-shadow: 0 0 3px var(--tertiary-color);
+  height: 300px;
+  width: 350px;
+  background-color: var(--tertiary-color);
+}
+
+main aside.aside-second div p {
+  font-family: Poppins-Extralight;
+  font-size: 110%;
+}
+
+main aside.aside-second div input {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  width: 80%;
+  height: 16%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  border-radius: 4px;
+}
+
+main aside.aside-second div button {
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  font-size: 105%;
+  width: 80%;
+  height: 14%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main aside.aside-second div button:hover {
+  background: var(--secondary-color);
+  border-radius: 20px;
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main aside.aside-third {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 20%;
+  right: -100%;
+  background-color: var(--tertiary-color);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main aside.aside-third figure {
+  width: 100%;
+  height: 40%;
+}
+
+main aside.aside-third figure img {
+  height: 80%;
+}
+
+main aside.aside-third figure p {
+  font-family: Poppins-Extralight;
+  font-size: 104%;
+}
+
+main aside.aside-third .table-players {
+  width: 100%;
+  height: 54%;
+  overflow: auto;
+}
+
+main aside.aside-third .table-players .player {
+  height: 60px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main aside.aside-third .table-players .player p {
+  width: 45%;
+}
+
+main aside.aside-third .table-players .player:hover {
+  background: #e7f2ff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main aside.aside-third .table-players .player-header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: var(--secondary-color);
+}
+
+main aside.aside-third .table-players .player-header p {
+  font-size: 112%;
+  color: var(--tertiary-color);
+}
+
+main aside.aside-fourth {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 20%;
+  right: -100%;
+  background: var(--tertiary-color);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main aside.aside-fourth .content-about-logo {
+  width: 100%;
+  height: 30%;
+  padding-top: 24px;
+}
+
+main aside.aside-fourth .content-about-logo img {
+  height: 120%;
+}
+
+main aside.aside-fourth .content-about-logo p {
+  font-size: 120%;
+}
+
+main aside.aside-fourth .content-about-text {
+  width: 100%;
+  height: 50%;
+  overflow: auto;
+}
+
+main aside.aside-fourth .content-about-text p:first-of-type {
+  padding-left: 10px;
+  border-left: 4px solid var(--primary-color);
+  font-size: 130%;
+}
+
+main aside.aside-fourth .content-about-text p:last-of-type {
+  width: 90%;
+  font-size: 90%;
+}
+
+main aside.aside-fourth .content-about-others {
+  width: 100%;
+  height: 20%;
+  border-top-left-radius: 26px;
+  border-top-right-radius: 26px;
+  background-color: var(--primary-color);
+}
+
+main aside.aside-fourth .content-about-others div {
+  width: 44%;
+  height: 40%;
+  border-radius: 20px;
+}
+
+main aside.aside-fourth .content-about-others div i {
+  font-size: 130%;
+  color: var(--tertiary-color);
+  border: 1px solid var(--tertiary-color);
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+main aside.aside-fourth .content-about-others p {
+  font-size: 109%;
+  color: var(--tertiary-color);
+}
+/*# sourceMappingURL=home.css.map */

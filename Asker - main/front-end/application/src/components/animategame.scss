@@ -1,0 +1,21 @@
+.answer-correct{
+    background: lime;
+
+    p{
+        color: white;
+    }
+}
+
+.answer-wrong{
+    background-color: red;
+
+    p{
+        background-color: transparent;
+        color: white;
+    }
+}
+
+.eliminated{
+    transform: translateX(120%);
+    transition: all .3s;
+}

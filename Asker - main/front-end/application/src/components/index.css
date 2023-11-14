@@ -1,0 +1,103 @@
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+
+main .header-page {
+  opacity: 0;
+}
+
+main .header-page .title-page {
+  font-size: 110%;
+}
+
+main .header-page .sub-title-page {
+  font-size: 85%;
+}
+
+main img {
+  width: 240px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+main #paragraph-logo {
+  width: 90px;
+  font-size: 170%;
+  font-family: Poppins-Extrabold;
+  color: var(--tertiary-color);
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+main .paragraph-logo-second {
+  display: none;
+  top: 44.100%;
+  left: 42%;
+}
+
+main .canva {
+  width: 0px;
+  height: 0px;
+  -webkit-transform: translate(-16%, 22%);
+          transform: translate(-16%, 22%);
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  border-top: 16px solid var(--secondary-color);
+  border-radius: 10px;
+  background-color: var(--tertiary-color);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+main .canva p {
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+  font-size: 170%;
+  font-family: Poppins-Extrabold;
+  color: var(--tertiary-color);
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+main .canva a {
+  width: 70%;
+  height: 80%;
+  text-decoration: none;
+  color: var(--fourtiary-color);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+main .canva a img {
+  width: 90%;
+  height: 90%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+main .canva a :hover {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+main .container-gif {
+  height: 150px;
+  width: 260px;
+}
+
+main .container-gif figure {
+  width: 70%;
+}
+
+main .container-gif figure img {
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */

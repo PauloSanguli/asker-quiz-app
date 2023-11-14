@@ -1,0 +1,272 @@
+@import url("animategame.css");
+main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main header {
+  width: 100%;
+  height: 16%;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  overflow-x: auto;
+}
+
+main header .content-header-level {
+  border: 1px solid var(--secondary-color);
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-size: 110%;
+  color: var(--secondary-color);
+}
+
+main header .content-header-category {
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+}
+
+main header .content-header-round {
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+}
+
+main aside {
+  width: 100%;
+  height: 68%;
+}
+
+main aside .content-aside-statement {
+  padding: 40px 20px;
+  width: 100%;
+  height: 30%;
+  overflow: auto;
+}
+
+main aside .content-aside-answers {
+  height: 70%;
+  width: 100%;
+}
+
+main aside .content-aside-answers button {
+  height: 18%;
+  width: 90%;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main aside .content-aside-answers button p:nth-of-type(1) {
+  height: 100%;
+  width: 20%;
+  font-size: 170%;
+  font-family: Poppins-bold;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main aside .content-aside-answers button p:nth-of-type(2) {
+  width: 80%;
+  height: 100%;
+  padding-left: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main footer {
+  width: 100%;
+  height: 16%;
+  position: fixed;
+  bottom: 0;
+}
+
+main footer button:nth-of-type(2) {
+  width: 22%;
+  height: 72%;
+  color: var(--tertiary-color);
+}
+
+main footer button {
+  border: 1px solid var(--secondary-color);
+  padding: 20px 20px;
+  width: 20%;
+  height: 60%;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  overflow: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main footer button i {
+  font-size: 140%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main footer button p {
+  font-size: 110%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main footer button:hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main footer button:hover p {
+  -webkit-transform: translateY(200%);
+          transform: translateY(200%);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main footer button:hover i {
+  font-size: 220%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main aside.looser {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  top: -100%;
+  position: absolute;
+}
+
+main aside.looser .container {
+  width: 80%;
+  height: 80%;
+}
+
+main aside.looser .container p {
+  opacity: 0;
+}
+
+main aside.looser .container p:nth-of-type(1) {
+  font-family: Poppins-Bold;
+  color: var(--tertiary-color);
+  font-size: 270%;
+}
+
+main aside.looser .container p:nth-of-type(1) span {
+  color: red;
+  font-family: Poppins-ExtraBold;
+}
+
+main aside.looser .container figure {
+  width: 420px;
+  height: 340px;
+}
+
+main aside.looser .container figure img {
+  width: 100%;
+  height: 100%;
+}
+
+main aside.looser .container p:last-child {
+  color: var(--tertiary-color);
+  font-size: 160%;
+  font-family: Poppins-Extralight;
+}
+
+main aside.winner-round {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  top: -100%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main aside.winner-round .container {
+  width: 86%;
+  height: 70%;
+  border-radius: 5px;
+}
+
+main aside.winner-round .container p {
+  opacity: 0;
+  font-family: Poppins-Light;
+  font-size: 260%;
+  color: var(--fourtiary-color);
+}
+
+main aside.winner-round .container figure {
+  width: 380px;
+  height: 380px;
+}
+
+main aside.winner-round .container figure img {
+  width: 100%;
+  height: 100%;
+}
+
+main aside.winner-level {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: -100%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main aside.winner-level .container {
+  width: 85%;
+  height: 80%;
+}
+
+main aside.winner-level .container p {
+  font-family: Poppins-ExtraBold;
+  font-size: 120%;
+  color: var(--tertiary-color);
+}
+
+main aside.winner-level-all {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: -100%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main aside.winner-level-all .container {
+  width: 85%;
+  height: 80%;
+}
+
+main aside.winner-level-all .container .message p:nth-of-type(1) {
+  font-family: Poppins-Bold;
+  font-size: 200%;
+  color: greenyellow;
+}
+
+main aside.winner-level-all .container .message p:nth-of-type(2) {
+  font-size: 140%;
+  color: var(--tertiary-color);
+}
+
+main aside.winner-level-all .container p {
+  font-family: Poppins-Extralight;
+  font-size: 150%;
+  color: var(--tertiary-color);
+}
+/*# sourceMappingURL=game.css.map */
